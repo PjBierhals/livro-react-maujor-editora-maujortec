@@ -1,23 +1,17 @@
 import React, { Fragment } from "react";
+import Topo from "./components/Topo";
+import Principal from "./components/Principal";
+import Rodape from "./components/Rodape";
 
-function App() {
+const App = () => {
   return (
     <>
-      <header className="topo">
-        <h1 className="logo"></h1>
-        <ul>
-          <li><a href="">Navegação</a></li>
-        </ul>
-      </header>
-      <main className="principal">
-        <h2>Últimos Lanamentos</h2>
-        <div className="card">Card</div>
-      </main>
-      <footer className="rodape">
-        <p> Conteúdo cedidos pela Editora Novatec &#8212; Copyright 2020</p>
-      </footer>
+      <Topo />
+      <Principal />
+      <Rodape />
     </>
-  );
+
+  )
 }
 
 export default App;
