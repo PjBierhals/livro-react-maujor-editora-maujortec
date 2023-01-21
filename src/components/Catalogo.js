@@ -1,9 +1,9 @@
 import React from "react";
 
-const Catalogo =()=>(
-  <main className="principal">
-    <h2>Catalogo de Livros</h2>
-    <ul>
+const Catalogo = ()=>(
+    <main className="principal">
+        <h2>Categoria Catálogo</h2>
+        <ul>
         <li>
             <a href="#">Livro 1</a>
         </li>
@@ -11,7 +11,7 @@ const Catalogo =()=>(
             <a href="#">Livro 2</a>
         </li>
     </ul>
-  </main>  
+    </main>
 );
 
 export default Catalogo;

@@ -4,7 +4,7 @@ import Topo from "./components/Topo";
 import Frontend from "./components/Frontend";
 import Programacao from "./components/Programacao";
 import Design from "./components/Design";
-import Catalago from "./components/Catalogo";
+import Catalogo from "./components/Catalogo";
 import Principal from "./components/Principal";
 import Rodape from "./components/Rodape";
 import "./index.css";
@@ -18,15 +18,17 @@ class App extends Component {
         <>
           <Topo />
           <Routes>
-            <Route exact path="/" render={Home} />
-            <Route path="/frontend" render={Frontend} />
-            <Route exact path="/programacao" render={Programacao} />
-            <Route exact path="/design" render={Design} />
-            <Route exact path="/catalogo" render={(props) => <Catalago />} />
-            <Route component={NotFound}/>
+            <Route path="/" element={<Home />}/>
+            <Route path="/frontend" element={<Frontend/>} />
+            <Route path="/programacao" element={<Programacao/>} />
+            <Route path="/design" element={<Design/>} />
+            <Route path="/catalogo" element={<Catalogo />} />
+            <Route element={NotFound}/>
           </Routes>
+          <Rodape/>
         </>
       </Router>
+      
     );
   }
 }
